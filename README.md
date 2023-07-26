@@ -25,6 +25,31 @@ cd swytshop
 ```bash
 npm install
 ```
+4. Créer une base de données MongoDB
+Assurez-vous que vous avez une instance de MongoDB en cours d'exécution ou créez-en une sur le cloud (par exemple, MongoDB Atlas).
+
+5. Obtenir le lien de connexion MongoDB
+Récupérez le lien de connexion MongoDB de votre base de données. Il devrait ressembler à ceci :
+
+```bash
+mongodb://<username>:<password>@<cluster-url>/<database-name>
+```
+Remplacez <username>, <password>, <cluster-url> et <database-name> par vos propres informations d'identification et noms de base de données.
+
+6. Configurer le fichier next.config.js
+Dans le répertoire racine du projet, vous trouverez un fichier appelé next.config.js. Ouvrez ce fichier dans un éditeur de texte et localisez la section qui ressemble à ceci :
+
+```bash
+// next.config.js
+
+module.exports = {
+  env: {
+    MONGODB_URI: 'mongodb://<username>:<password>@<cluster-url>/<database-name>',
+  },
+  // Autres configurations...
+};
+```
+Remplacez 'mongodb://<username>:<password>@<cluster-url>/<database-name>' par le lien de connexion que vous avez obtenu à l'étape 5.
 
 ## Démarrage 
 
