@@ -11,13 +11,13 @@ Avant de commencer, assurez-vous d'avoir installé [Node.js](https://nodejs.org)
 1. Clonez le projet depuis GitHub :
 
 ```bash
-git clone https://github.com/john1340a/SWYT-SSR.git
+git clone https://github.com/AchrefAwaissi/Swytshop.git
 ```
 
 2. Accédez au répertoire du projet :
 
 ```bash
-cd swyt-ssr
+cd swytshop
 ```
 
 3. Installez les dépendances du projet :
