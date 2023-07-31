@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import '../styles/product.css'
 import Layout from '../components/Layout'
 import { DataProvider } from '../store/GlobalState'
 
